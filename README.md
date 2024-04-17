@@ -29,4 +29,9 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 
 The latest PCB revision number is Rev.D.
 
+### Pre-production renders:
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-top.png?raw=true)
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-bot.png?raw=true)
 
