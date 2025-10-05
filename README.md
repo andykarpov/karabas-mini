@@ -27,7 +27,9 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 
 ### PCB 
 
-The latest PCB revision number is Rev.D.
+The latest stable PCB revision number is Rev.F3.
+
+The latest development PCB revision number is Rev.G.
 
 ### Pre-production renders:
 
@@ -35,7 +37,7 @@ The latest PCB revision number is Rev.D.
 
 ![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-bot.png?raw=true)
 
-### Required HW mod for all revisions:
+### Required HW mod for all revisions before Rev.G:
 
 The latest cores that uses FT812 chip (boot and tsconf) now requires a generated clock by FPGA instead of 8MHz crystal oscillator.
 To perform the mod please do the following:
