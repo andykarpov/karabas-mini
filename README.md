@@ -31,7 +31,7 @@ FPGA cores, the firmware and other software parts are licensed by their own lice
 
 The latest stable PCB revision number is Rev.G.
 
-Waring: RevC,D,F requires a small [![HW mod](https://github.com/andykarpov/karabas-mini/blob/master/revF_mod.md)
+Warning: RevC,D,F requires a small [HW mod](https://github.com/andykarpov/karabas-mini/blob/master/revF_mod.md)
 
 ### Pre-production renders:
 
