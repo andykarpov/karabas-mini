@@ -33,6 +33,8 @@ The latest stable PCB revision number is Rev.G.
 
 Warning: RevC,D,F requires a small [HW mod](https://github.com/andykarpov/karabas-mini/blob/master/revF_mod.md)
 
+PCB source project: https://github.com/andykarpov/karabas-mini-pcb
+
 ### Pre-production renders:
 
 ![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-top.png?raw=true)
