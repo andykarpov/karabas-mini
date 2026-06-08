@@ -1,3 +1,8 @@
+## Rev.G2
+
+- replaced UDA1334A with PCM5102A
+- aligned SDRAM tracks
+
 ## Rev.G
 
 - removed crystal from FT812
