@@ -41,3 +41,17 @@ PCB source project: https://github.com/andykarpov/karabas-mini-pcb
 
 ![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-bot.png?raw=true)
 
+### Shield with CF card and ESP32-S3 for rev.G (2nd floor)
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-shield-v4-top.png?raw=true)
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-shield-v4-bot.png?raw=true)
+
+### Shield for v4 shield with Dot matrix display (3rd floor)
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-shield-v4-disp-top.png?raw=true)
+
+![image](https://github.com/andykarpov/karabas-mini/blob/master/docs/karabas-mini-shield-v4-disp-bot.png?raw=true)
+
+
+
