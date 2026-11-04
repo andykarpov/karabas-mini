@@ -4,6 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
+**Archived (2026-11-04).** Everything moved to `karabas-go` (the family repo: `firmware/karabas_mini.uf2`, `karabas_minig.uf2`, `docs/mini`, `pcb/mini`, `case/mini`). Do not change this repo.
+
 The release repo of the Karabas Mini and Mini G boards (Xilinx Spartan-6 XC6SLX25, RP2040 MCU, FT812, HDMI/DVI, ESP8266, an ESP32-S3 on the shield): what goes onto the SD card and the board, plus the hardware documents. There is no source code and nothing to build here. The cores are built in their own repos (`karabas-go-core-*`), the MCU firmware in `karabas-go-firmware`, the PCB sources in `karabas-mini-pcb`. The hardware design and docs are CC BY-NC-SA 4.0 (`LICENSE`); cores and firmware have their own licenses.
 
 Two board families: Rev.C .. Rev.F3 take `firmware.uf2`, Rev.G / G2 `firmware_g.uf2` (renamed to `firmware.uf2` when copied to the board); the cores are the same files for both, `docs/howto.md`. Rev.C, D and F need the hardware mod of `revF_mod.md` (the FT812 clock from the FPGA on MCU_IO4 instead of the crystal) for the cores that use the FT812 (boot, tsconf).
