@@ -10,7 +10,7 @@ Two board families: Rev.C .. Rev.F3 take `firmware.uf2`, Rev.G / G2 `firmware_g.
 
 ## Layout
 
-- `cores/`: the core files `*.kg`, one per core with the bitstreams of all the boards (`boot.kg` is the boot menu). The cores are `.kg` files: one file for Go, Mini and Mini G (format kgo2, karabas-go-tools `docs/kgo2.md`); they need the firmware 26110415 or later (`firmware/`), an older firmware does not see them and stops with "Boot file not found". They go into the root of SD card 1.
+- No `cores/`: the cores of all the boards are `.kg` files in the sibling repo `karabas-go` (`cores/`, `boot.kg` is the boot menu); README.md says so. The cores are `.kg` files: one file for Go, Mini and Mini G (format kgo2, karabas-go-tools `docs/kgo2.md`); they need the firmware 26110415 or later (`firmware/`), an older firmware does not see them and stops with "Boot file not found". They go into the root of SD card 1.
 - `firmware/firmware.uf2` (Mini), `firmware/firmware_g.uf2` (Mini G): the RP2040 firmware, copied to the `RPI-RP2` drive in BOOTSEL.
 - `firmware/esp32-s3/`: the ESP32-S3 firmware of the shield (`bootloader.bin`, `partition-table.bin`, `esp-spi.bin`) and `flash.sh` / `flash.bat` (esptool, edit the port first; JP11 closed while flashing). `firmware/esp32-s3-old-zifi/`: the older ZiFi build with `zifi.spg`.
 - `software/`: extra files for the cores (`TBBLUE.FW` of ZX Next, `.WMF` plugins, `gopher_esp32.spg`).
@@ -21,7 +21,7 @@ Two board families: Rev.C .. Rev.F3 take `firmware.uf2`, Rev.G / G2 `firmware_g.
 ## Release
 
 - `firmware/firmware.uf2` and `firmware/firmware_g.uf2` are committed by the CI release job of `karabas-go-firmware` (`.github/workflows/build.yml`, the `SIBLING_REPOS_TOKEN` secret, commits "Firmware build <version>: ..." by github-actions[bot]). Never commit them by hand. The job also removes `cores/karabas.ini`, `firmware/karabas.ini` and `firmware/drivers` if they appear. The ESP32-S3 files are not touched by the job.
-- Core files are copied in by hand after a core release: the `.kg` built by the core repo replaces the one in `cores/`, and the same file goes to the sibling repo `karabas-go` (`cores/`). Commit messages follow "<Core> build <date stamp>: <what changed>".
+- Core releases go to `karabas-go` only (`cores/*.kg`).
 - The CI job pushes with `git pull --rebase`: pull before committing a core, the firmware may have moved on.
 - Commit only the files of the release. Do not commit untracked user files (local `karabas.ini`, drivers, test images).
 - Do not touch `case/`, `pcb/` and the PCB documents unless asked: they come from the hardware work, not from the cores or the firmware.

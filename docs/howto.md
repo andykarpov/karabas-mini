@@ -2,7 +2,7 @@
 
 How to prepare the newly created devboard to run:
 
-1. Prepare an SD card #1 with cores (*.kg, the same files for every revision) and joystick drivers (drivers directory with ini files) in the root of SD card. The SD card should be FAT32 formatted.
+1. Prepare an SD card #1 with cores (*.kg from `cores/` of the [karabas-go](https://github.com/andykarpov/karabas-go) repo, the same files for every revision) and joystick drivers (drivers directory with ini files) in the root of SD card. The SD card should be FAT32 formatted.
 
 2. Upload the RP2040 firmware:
 
