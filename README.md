@@ -5,15 +5,16 @@
 > the cores (`cores/*.kg`, one file for all the boards), the firmware (`firmware/karabas_mini.uf2`
 > for rev.C - rev.F3, `firmware/karabas_minig.uf2` for rev.G / G2, the ESP32-S3 files), the
 > docs, gerbers and cases of the Mini (`docs/mini`, `pcb/mini`, `case/mini`), the first start
-> (`docs/howto.md`). The files here are not updated any more: the firmware here does not read
-> the current cores.
+> (`docs/howto.md`). The files here are not updated any more: take the firmware from
+> karabas-go, the one here gets older than the cores need.
 >
 > **Репозиторий в архиве.** Karabas Mini и Mini G теперь в
 > [karabas-go](https://github.com/andykarpov/karabas-go), общем репозитории всего семейства:
 > ядра (`cores/*.kg`, один файл для всех плат), прошивка (`firmware/karabas_mini.uf2` для
 > rev.C - rev.F3, `firmware/karabas_minig.uf2` для rev.G / G2, файлы ESP32-S3), документация,
 > гербера и корпуса Mini (`docs/mini`, `pcb/mini`, `case/mini`), первый запуск
-> (`docs/howto.md`). Файлы здесь больше не обновляются: прошивка отсюда не читает нынешние ядра.
+> (`docs/howto.md`). Файлы здесь больше не обновляются: прошивку берите из karabas-go, здешняя
+> со временем устареет для новых ядер.
 
 A Spartan-6 based devboard to emulate different retro-computers.
 
